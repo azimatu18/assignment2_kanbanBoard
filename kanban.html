@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kanban Board</title>
+        <link rel="stylesheet" href="css/styleKanban.css">
+    </head>
+    <body>
+        <h1>Kanban Board</h1>
+        <div class="board">
+            <div class="column" id="todo-column" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <h2>To Do</h2>
+                <img src="todo.jpeg" alt="Gambar Logo">
+                <div>
+                    <input type="text" id="new-card-text">
+                    <button id="add-button" onclick="addCard()">+ Add</button>
+                </div>
+            </div>
+            <div class="column" id="inprogress-column" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <h2>In Progress</h2>
+                <img src="inprogress.jpeg" alt="Gambar Logo">
+                <div>
+                    <input type="text" id="new-card-text">
+                    <button id="add-button" onclick="addCard()">+ Add</button>
+                </div>
+            </div>
+            <div class="column" id="done-column" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <h2>Done</h2>
+                <img src="done.jpeg" alt="Gambar Logo">
+                <div>
+                    <input type="text" id="new-card-text">
+                    <button id="add-button" onclick="addCard()">+ Add</button>
+                </div>
+            </div>
+        </div>
+    <script src="js/kanban.js"></script>
+    </body>
+</html>
